@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado da Consulta</title>
+</head>
+<body>
+    <h1>Tempo em {{ cidade }}</h1>
+    <h2>Temperatura: {{ temperatura }}°C</h2>
+    <h2>Descrição: {{ descricao }}</h2>
+    <h2>Umidade : {{ umidade }}%</h2>
+    <h2>Vento: {{ vento }} m/s</h2>
+
+    <a href="{% url 'consultar_tempo' %}">Nova Consulta</a>
+    <a href="{% url 'index' %}">Página Inicial</a>
+</body>
+</html>

@@ -11,8 +11,11 @@
         {% for cidade in cidades %}
         <li>
             {{ cidade.nome }} - {{ cidade.pais }}
+            <a href="{% url 'atualizar_cidade' cidade.id%}">Atualizar</a>
+            <a href="{% url 'deletar_cidade' cidade.id%}">Deletar</a>
         </li>
         {% endfor %}
+        <a href="{% url 'criar_cidade' %}">Criar</a>
     </ul>
 </body>
 </html>
