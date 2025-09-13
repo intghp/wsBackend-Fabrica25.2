@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deletar Cidade Cadastrada</title>
+</head>
+<body>
+    <h1>Deletar Cidade</h1>
+    <p>Tem certeza que deseja deletar a cidade {{ cidade }}</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Confirmar</button>
+    </form>
+    <a href="{% url 'listar_cidades' %}">Cancelar</a>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Cidades Cadastradas</title>
+</head>
+<body>
+    <h1>Cidades Cadastradas</h1>
+    <ul>
+        {% for cidade in cidades %}
+        <li>
+            {{ cidade.nome }} - {{ cidade.pais }}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
