@@ -3,7 +3,14 @@
 
 ## 📌 Sobre o projeto
 
-Este projeto é um sistema **Django** para consultar condições climáticas através da **API OpenWeatherApp** utilizando **Class Based View (CBV)** para a entidade **Cidade** e uma **API** para a entidade **ConsultaTempo**
+Este projeto consiste em um **sistema Django** para consulta de condições climáticas em tempo real, utilizando a **API OpenWeatherMap**
+
+A aplicação foi desenvolvida com o seguintes critérios:
+
+- **Entidade Cidade:** implementada com Class-Based-Views, permitindo o CRUD de cidades.
+- **Entidade ConsultaTempo:** modelo que armazena os dados obtidos da API externa OpenWeatherMap e os expõe por meio de uma API própria.
+
+Dessa forma, o sistema integra funcionalidades baseadas em templates **Django** com uma **API REST**.
 
 ## ⚙️ Tecnologias
 - Python 3.12.0
@@ -12,7 +19,7 @@ Este projeto é um sistema **Django** para consultar condições climáticas atr
 ## ✨ Funcionalidades
 - ✅ Consulta em tempo real via **OpenWeatherApp API**
 - ✅ Cadastro e Gerenciamento de Cidades
-- ✅ Operações CRUD completas para entidades
+- ✅ Operações CRUD completas para a entidade **Cidade**
 
 
 
@@ -37,13 +44,18 @@ Este projeto é um sistema **Django** para consultar condições climáticas atr
 
 ### 3. Instalar dependências
 ```bash
-  git install -r requirements.txt
+  pip install -r requirements.txt
 ```
 
 ### 4. Aplicar migrações
 ```bash
   python manage.py makemigrations
   python manage.py migrate
+```
+
+### 5. Rodar projeto
+```bash
+  python manage.py runserver
 ```
 O projeto estará disponível em https://127.0.0.1:8000/
 
@@ -113,9 +125,3 @@ O projeto estará disponível em https://127.0.0.1:8000/
   "cod": 200
 }
 ```
-
-
-## Feedback
-
-Se você tiver algum feedback, por favor enviar para o email: gustavolucenapaiva1@gmail.com
-
