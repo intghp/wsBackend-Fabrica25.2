@@ -1,8 +1,8 @@
 from django.views import View
 from django.conf import settings
 from django.contrib import messages
-from django.shortcuts import render
 from django.urls import reverse_lazy
+from django.shortcuts import render, redirect
 from django.http import HttpResponse, JsonResponse
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 
@@ -16,7 +16,7 @@ API_KEY = settings.OPENWEATHER_API_KEY
 # Create your views here.
 class HelloView(View):
     def get(self, request):
-        return HttpResponse('Aplicação de Consulta do Tempo')
+        return redirect('listar_cidades')
     
 class CidadeListView(ListView):
     model = Cidade
