@@ -1,9 +1,12 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consultar Tempo</title>
+    <link rel="stylesheet" href="{% static 'clima_app/consultar_tempo.css' %}">
 </head>
 <body>
     <h1>Consultar Tempo</h1>
@@ -12,6 +15,6 @@
         {{ form.as_p }}
         <button type="submit">Consultar</button>
     </form>
-    <a href="{% url 'listar_cidades' %}">Cidades</a>
+    <a href="{% url 'listar_cidades' %}">Voltar</a>
 </body>
 </html>

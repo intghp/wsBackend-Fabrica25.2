@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0F4F8;
+    margin: 20px;
+}
+
+h1 {
+    color: #1F2937;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 500px;
+    margin: auto;
+}
+
+li {
+    background: #FFFFFF;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 8px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+a[href*="atualizar"] {
+    text-decoration: none;
+    text-decoration: none;
+    color: #3B82F6;
+    font-weight: bold; 
+}
+
+a[href*="deletar"] {
+    background: #E25858;
+    color: #FFFFFF;
+}
+
+a[href*="criar"],
+a[href*="consultar"] {
+    background: #92B35A;
+    color: #FFFFFF;
+}
